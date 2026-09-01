@@ -9,8 +9,8 @@
 | e.g 0x5A 0xA5 | 2Byte   |  NByte    | NByte   |
 ```
 
-- **HEAD**: 固定头部，内容可指定，长度无限制（常用 `0x5A 0xA5`）
-- **length**: 表示PAYLOAD数据的长度，本身长度可配置（如2Byte可表示最大65535Byte）
+- **HEAD**: 固定头部，内容可指定（常用 `0x5A 0xA5`）
+- **length**: 表示PAYLOAD数据的长度，类型可配置（如2Byte可表示最大65535Byte）
 - **PAYLOAD**: 实际数据内容
 - **verif**: 校验值（length+PAYLOAD），算法可指定，长度根据算法确定（如CRC-32使用4字节）
 
